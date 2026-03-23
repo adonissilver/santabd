@@ -1,0 +1,21 @@
+
+select *from hr.DEPARTMENTS
+select FIRST_NAME,EMAIL,HIRE_DATE from HR.EMPLOYEES
+select first_name, email, salary, salary*12 from hr.EMPLOYEES
+select first_name, email, salary "Salario", salary*12 "Salario Anual" from hr.EMPLOYEES
+select first_name, email, salary "MeuSalario", salary*12 "Salario Anual" from hr.EMPLOYEES
+
+SELECT department_id 
+FROM hr.employees 
+ORDER BY department_id
+
+
+SELECT first_name, last_name, salary       -- 1ª parte: o que você quer ver (colunas)
+FROM employees                              -- 2ª parte: de qual tabela os dados vêm
+WHERE department_id = 10                    -- 3ª parte (opcional): filtro de quais linhas
+ORDER BY salary DESC;                        -- 4ª parte (opcional): como ordenar os resultados
+
+SELECT → diz quais colunas você quer mostrar.
+FROM → diz de qual tabela os dados vêm.
+WHERE → diz quais linhas incluir (condição).
+ORDER BY → diz em que ordem mostrar os resultados.
