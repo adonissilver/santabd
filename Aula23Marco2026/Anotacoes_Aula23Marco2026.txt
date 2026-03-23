@@ -1,4 +1,7 @@
 
+Usamos a plataforma gratuita para testes, nessa plataforma já existem tabelas populadas para facilitar os estudos.
+https://freesql.com/
+
 select *from hr.DEPARTMENTS
 select FIRST_NAME,EMAIL,HIRE_DATE from HR.EMPLOYEES
 select first_name, email, salary, salary*12 from hr.EMPLOYEES
@@ -19,3 +22,24 @@ SELECT → diz quais colunas você quer mostrar.
 FROM → diz de qual tabela os dados vêm.
 WHERE → diz quais linhas incluir (condição).
 ORDER BY → diz em que ordem mostrar os resultados.
+
+
+--Liste todos os empregados que têm um salário (salary) entre 1000 e 2000
+ select first_name,last_name, salary
+ from hr.EMPLOYEES
+ where salary >1000 and salary <2000
+
+
+--Liste os números e nomes dos departamentos ordenados
+-- por nome do--departamento. (departaments)
+select department_id,department_name
+from hr.DEPARTMENTS
+order by department_name
+
+
+-- Liste todos os tipos diferentes de funções 
+-- desempenhadas pelos empregados.
+select job_title
+from hr.JOBS
+
+
