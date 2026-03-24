@@ -2,6 +2,7 @@
 Usamos a plataforma gratuita para testes, nessa plataforma já existem tabelas populadas para facilitar os estudos.
 https://freesql.com/
 
+
 select *from hr.DEPARTMENTS
 select FIRST_NAME,EMAIL,HIRE_DATE from HR.EMPLOYEES
 select first_name, email, salary, salary*12 from hr.EMPLOYEES
@@ -65,6 +66,31 @@ AND job_id LIKE '%CLERK';
 SELECT FIRST_NAME
 FROM HR.EMPLOYEES
 WHERE First_name like'%th%' or  FIRST_NAME like '%ll%'
+
+
+•Liste o nome, função e salário para todos os empregados que tenham um chefe
+(mgr).
+
+• Apresente o nome e a remuneração total (14 vezes o salário mais a comissão)
+para todos os empregados.
+
+• Apresente todos os empregados que foram admitidos durante 1987.
+
+• Liste o nome, salário anual (14 vezes o salário mensal) e comissão para todo o
+pessoal de vendas (SALESMAN)
+
+
+
+Bibliografia: Head First Design Patterns
+[1] Fanderuff, Damaris. Dominando o Oracle 9i: Modelagem e
+desenvolvimento. São Paulo:Pearson Education do Brasil, 2003.
+[2] Costa, Rogério Luis de C., SQL : guia prático. 2. ed.
+Rio de Janeiro : Brasport, 2006.
+[3] SILBERSCHATZ, A. Sistema de bancos de dados.
+São Paulo: Pearson Education do Brasil, 2004.
+[4] Morelli, Eduardo M. Terra, 1996. Oracle 9i
+Fundamental: Sql, Pl/SQL e Administração. São
+Paulo: Érica, 2002
 
 
 
