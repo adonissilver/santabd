@@ -43,3 +43,28 @@ select job_title
 from hr.JOBS
 
 
+-- Liste a informação detalhada dos empregados dos 
+--departamentos 10 e 20 por ordem alfabética do nome.
+select FIRST_name,LAST_NAME
+from hr.EMPLOYEES
+where DEPARTMENT_ID=10 or DEPARTMENT_ID=20
+
+
+
+--Liste os nomes e funções de todos os empregados de escritório
+-- (clerk) do departamento 50
+
+SELECT first_name, last_name,JOB_ID
+FROM hr.employees
+WHERE department_id = 50
+AND job_id LIKE '%CLERK';
+
+
+-- Apresente todos os nomes de empregados 
+-- que tenham th ou ll.
+SELECT FIRST_NAME
+FROM HR.EMPLOYEES
+WHERE First_name like'%th%' or  FIRST_NAME like '%ll%'
+
+
+
