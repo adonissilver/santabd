@@ -74,8 +74,12 @@ select first_name,LAST_NAME, job_id, salary
 from hr.employees
 where job_id not like '%PRE%'
 
-• Apresente o nome e a remuneração total (14 vezes o salário mais a comissão)
-para todos os empregados.
+-- Apresente o nome e a remuneração total (14 vezes o salário mais a comissão)
+-- para todos os empregados.
+
+select first_name, last_name, salary, salary*14 salario_total
+from hr.EMPLOYEES
+
 
 • Apresente todos os empregados que foram admitidos durante 1987.
 SELECT FIRST_NAME, LAST_NAME, HIRE_DATE
