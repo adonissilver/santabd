@@ -70,11 +70,19 @@ WHERE First_name like'%th%' or  FIRST_NAME like '%ll%'
 
 •Liste o nome, função e salário para todos os empregados que tenham um chefe
 (mgr).
+select first_name,LAST_NAME, job_id, salary
+from hr.employees
+where job_id not like '%PRE%'
 
 • Apresente o nome e a remuneração total (14 vezes o salário mais a comissão)
 para todos os empregados.
 
 • Apresente todos os empregados que foram admitidos durante 1987.
+SELECT FIRST_NAME, LAST_NAME, HIRE_DATE
+FROM HR.EMPLOYEES
+WHERE HIRE_DATE BETWEEN 
+      TO_DATE('01/01/2013', 'DD/MM/YYYY')
+  AND TO_DATE('31/12/2013', 'DD/MM/YYYY');
 
 • Liste o nome, salário anual (14 vezes o salário mensal) e comissão para todo o
 pessoal de vendas (SALESMAN)
