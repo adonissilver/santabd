@@ -88,8 +88,13 @@ WHERE HIRE_DATE BETWEEN
       TO_DATE('01/01/2013', 'DD/MM/YYYY')
   AND TO_DATE('31/12/2013', 'DD/MM/YYYY');
 
-• Liste o nome, salário anual (14 vezes o salário mensal) e comissão para todo o
-pessoal de vendas (SALESMAN)
+
+-- Liste o nome, salário anual (14 vezes o salário mensal) e comissão para todo o
+-- pessoal de vendas (SALESMAN)
+
+select first_name, last_name, salary*14 salario_anual, commission_pct,job_id
+from hr.EMPLOYEES
+where job_id like 'SA_MAN'
 
 
 
