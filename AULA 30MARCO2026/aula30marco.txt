@@ -1,0 +1,46 @@
+
+--criei a tabeela
+CREATE TABLE tb_fornecedor 
+(
+    Cd_Fornecedor Number(4),
+    Nm_Fornecedor Varchar2(50),
+    Ds_Endereco  Varchar2(70),
+    Nr_Fone     Number(12),
+    Dt_Nascimento Date,
+    Ie_Sexo      Char(1),
+    Ie_Fisica_Juridica  Char(1),
+    Cd_Situacao Number(3)
+
+)
+
+
+
+--Inseri dados na tabela criada e commitei para salvar os dados inseridos
+INSERT INTO tb_fornecedor(
+    Cd_Fornecedor,
+    Nm_Fornecedor,
+    Ds_Endereco,
+    Nr_Fone,
+    Dt_Nascimento,
+    Ie_Sexo,
+    Ie_Fisica_Juridica,
+    Cd_Situacao
+)
+
+VALUES (
+    1,
+    'JOSE DOS SANTOS EQUIPAMENTOS',
+    'RUA DAS PALMEIRAS,150 - SÃO PAULO',
+    11988887777,
+    TO_DATE('15/03/1985','DD/MM/YYYY'),
+    'M',
+    'F',
+    1
+);
+COMMIT
+
+-- visualizei o conteúdo da tabela que inseri
+SELECT *
+FROM TB_FORNECEDOR
+
+
